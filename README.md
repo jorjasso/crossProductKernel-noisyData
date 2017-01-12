@@ -1,5 +1,14 @@
 # kernels On Fuzzy Sets and SVM on NoiseData
 
+To run the experiments type in the MATLAB prompt
+
+```matlab
+      experiments('pima' , 15, 'cn','fuzz1')
+```
+which uses the pima dataset, with 15% noise level, cn=clean training noise test estrategy and and membership functions.
+
+
+
 ```matlab
 %pima 
  screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 15, 'cn','fuzz1')"
