@@ -32,7 +32,7 @@ To run all the experiments using screen run
  screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 20, 'cn','fuzz4')"
 ```
 
-## Generating a cvs files with the results
+## Generating a cvs file with the results
 Simply run the MATLAB script
 ```matlab
 testResultsIntoCVS
