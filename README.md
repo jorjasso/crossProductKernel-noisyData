@@ -37,14 +37,15 @@ Simply run the MATLAB script
 ```matlab
 testResultsIntoCVS
 ```
-## Generating the plots of the AUC metrics
+## Generating some  plots
 Run the R script
 ```R
 getPlots
 ```
-
-Additionaly the MATLAB script generateFigures generates some figures in the paper.
- -r 7 -d ORB -dV visualDictionary/visualDictionary16ORB.pickle -i ballTreeIndexes/index_ORB_W16.pickle
+Run the Matlab script
+```matlab
+generateFigures
+```
 
 ## Motivation
 
