@@ -2,7 +2,7 @@
 
 ## Synopsis
 Experiments using cross product kernels on fuzzy sets and SVM on PIMA attribute Noise data.
-Experiments described in the paper: Fuzzy similarity measures between fuzzy sets using kernels on fuzzy sets
+Experiments described in the paper: Fuzzy set similarity using kernels on fuzzy sets.
 Reference:
 
 ---
@@ -19,21 +19,25 @@ To run an  experiment using the cross product kernels on fuzzy sets (linear, exp
 ```matlab
       experiments('pima' , 15, 'cn','fuzz1')
 ```
-To run all the experiments using screen run 
+To run all the experiments for the PIMA attribute noisy datasets using screen run this:
 
 ```matlab
+ screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 5, 'cn','crisp')"
+ screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 10, 'cn','crisp')"
+ screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 15, 'cn','crisp')"
+ screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 20, 'cn','crisp')"
+ screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 5, 'cn','fuzz1')"
+ screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 10, 'cn','fuzz1')"
  screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 15, 'cn','fuzz1')"
  screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 20, 'cn','fuzz1')"
+ screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 5, 'cn','fuzz2')"
+ screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 10, 'cn','fuzz2')"
  screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 15, 'cn','fuzz2')"
  screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 20, 'cn','fuzz2')"
- screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 15, 'cn','fuzz3')"
- screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 20, 'cn','fuzz3')"
- screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 15, 'cn','fuzz4')"
- screen  -d -m matlab -nodisplay -nosplash -r    "experiments('pima' , 20, 'cn','fuzz4')"
 ```
 
 ## Generating a cvs file with the results
-Simply run the MATLAB script
+This generate a csv with all the results. Run the MATLAB script:
 ```matlab
 testResultsIntoCVS
 ```
