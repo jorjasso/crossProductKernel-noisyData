@@ -3,7 +3,9 @@
 %It retrieve the test estatistics from each .MAT (dataset)  and save them into a cvs file 
 
 mat = dir('resultsMAT/PIMA/*.mat')
-fid = fopen('resultsPIMA.csv', 'w') ;
+%mat = dir('resultsMAT/sonar/*.mat')
+
+fid = fopen('resultssonar.csv', 'w') ;
 varNames={'Dataset', 'fuzzyfication' 'kernelOption', '100-Err_Rate', '100-Err_RateA','100-Err_RateN','AUC,TP', 'TN', 'FP', 'FN', 'TPR', 'SPC', 'PPV', 'NPV', 'FPR', 'FDR', 'ACC', 'F1', 'MCC'}
 fprintf(fid, '%s,', varNames{1,1:end},varNames{1,3:end-1}) ;
 fprintf(fid, '%s\n',varNames{1,end}) ;
@@ -24,6 +26,8 @@ end
 for q = 1:length(mat)
     
     cont = load(strcat('resultsMAT/PIMA/',mat(q).name));
+    %cont = load(strcat('resultsMAT/sonar/',mat(q).name));
+
     dataName = mat(q).name
     fuzzyficationType=cont.datasetOption
     % Test statistics

@@ -23,7 +23,8 @@ library(hydroGOF)
 
 #DATASET
 #-------------
-path<-"resultsPIMA.csv"
+#path<-"resultsPIMA.csv"
+path<-"resultssonar.csv"
 pathExperiments<-"../../output/experiments/"
 data_set<-read.csv(path,head=TRUE,sep=",")
 data_set<-tbl_df(data_set)
@@ -86,23 +87,23 @@ df<-data.frame(x=c(5,10,15,20),
 
 
 df %>% ggvis( ~x, ~count_oil) %>%
-  layer_paths()  %>% 
+  layer_paths(strokeDash:=3)  %>% 
   layer_points()  %>% 
-  layer_points(size := 50,fill="linear") %>%
-  layer_paths( ~x, ~count_gas) %>% 
-  layer_points( ~x, ~count_gas,fill="Gaussian") %>% 
-  layer_paths( ~x, ~fuzz4) %>% 
-  layer_points( ~x, ~fuzz4,fill="fuzzy linear - I") %>% 
-  layer_paths( ~x, ~fuzz5) %>% 
-  layer_points( ~x, ~fuzz5,fill="fuzzy exp - I") %>% 
-  layer_paths( ~x, ~fuzz6) %>% 
-  layer_points( ~x, ~fuzz6,fill="fuzzy Gaussian - I") %>% 
+  layer_points(size := 50,fill="....... linear") %>%
+  layer_paths( ~x, ~count_gas,strokeDash:=3) %>% 
+  layer_points( ~x, ~count_gas,fill="....... Gaussian") %>% 
+  layer_paths( ~x, ~fuzz4,strokeDash:=7) %>% 
+  layer_points( ~x, ~fuzz4,fill="- - - - fuzzy linear - I") %>% 
+  layer_paths( ~x, ~fuzz5,strokeDash:=7) %>% 
+  layer_points( ~x, ~fuzz5,fill="- - - - fuzzy exp - I") %>% 
+  layer_paths( ~x, ~fuzz6,strokeDash:=7) %>% 
+  layer_points( ~x, ~fuzz6,fill="- - - - fuzzy Gaussian - I") %>% 
   layer_paths( ~x, ~fuzz7) %>% 
-  layer_points( ~x, ~fuzz7,fill="fuzzy linear - II") %>% 
+  layer_points( ~x, ~fuzz7,fill="____ fuzzy linear - II") %>% 
   layer_paths( ~x, ~fuzz8) %>% 
-  layer_points( ~x, ~fuzz8,fill="fuzzy exp - II") %>% 
+  layer_points( ~x, ~fuzz8,fill="____ fuzzy exp - II") %>% 
   layer_paths( ~x, ~fuzz9) %>% 
-  layer_points( ~x, ~fuzz9,fill="fuzzy Gaussian - II") %>% 
+  layer_points( ~x, ~fuzz9,fill="____ fuzzy Gaussian - II") %>% 
   
   scale_numeric("y", domain = c(0.7,1)) %>%
   
@@ -176,23 +177,23 @@ df<-data.frame(x=c(5,10,15,20),
 
 
 df %>% ggvis( ~x, ~count_oil) %>%
-  layer_paths()  %>% 
+  layer_paths(strokeDash:=3)  %>% 
   layer_points()  %>% 
-  layer_points(size := 50,fill="linear") %>%
-  layer_paths( ~x, ~count_gas) %>% 
-  layer_points( ~x, ~count_gas,fill="Gaussian") %>% 
-  layer_paths( ~x, ~fuzz4) %>% 
-  layer_points( ~x, ~fuzz4,fill="fuzzy linear - I") %>% 
-  layer_paths( ~x, ~fuzz5) %>% 
-  layer_points( ~x, ~fuzz5,fill="fuzzy exp - I") %>% 
-  layer_paths( ~x, ~fuzz6) %>% 
-  layer_points( ~x, ~fuzz6,fill="fuzzy Gaussian - I") %>% 
+  layer_points(size := 50,fill="....... linear") %>%
+  layer_paths( ~x, ~count_gas,strokeDash:=3) %>% 
+  layer_points( ~x, ~count_gas,fill="....... Gaussian") %>% 
+  layer_paths( ~x, ~fuzz4,strokeDash:=7) %>% 
+  layer_points( ~x, ~fuzz4,fill="- - - - fuzzy linear - I") %>% 
+  layer_paths( ~x, ~fuzz5,strokeDash:=7) %>% 
+  layer_points( ~x, ~fuzz5,fill="- - - - fuzzy exp - I") %>% 
+  layer_paths( ~x, ~fuzz6,strokeDash:=7) %>% 
+  layer_points( ~x, ~fuzz6,fill="- - - - fuzzy Gaussian - I") %>% 
   layer_paths( ~x, ~fuzz7) %>% 
-  layer_points( ~x, ~fuzz7,fill="fuzzy linear - II") %>% 
+  layer_points( ~x, ~fuzz7,fill="____ fuzzy linear - II") %>% 
   layer_paths( ~x, ~fuzz8) %>% 
-  layer_points( ~x, ~fuzz8,fill="fuzzy exp - II") %>% 
+  layer_points( ~x, ~fuzz8,fill="____ fuzzy exp - II") %>% 
   layer_paths( ~x, ~fuzz9) %>% 
-  layer_points( ~x, ~fuzz9,fill="fuzzy Gaussian - II") %>% 
+  layer_points( ~x, ~fuzz9,fill="____ fuzzy Gaussian - II") %>% 
   
   scale_numeric("y", domain = c(0.7,1)) %>%
   
@@ -265,23 +266,23 @@ df<-data.frame(x=c(5,10,15,20),
 
 
 df %>% ggvis( ~x, ~count_oil) %>%
-  layer_paths()  %>% 
+  layer_paths(strokeDash:=3)  %>% 
   layer_points()  %>% 
-  layer_points(size := 50,fill="linear") %>%
-  layer_paths( ~x, ~count_gas) %>% 
-  layer_points( ~x, ~count_gas,fill="Gaussian") %>% 
-  layer_paths( ~x, ~fuzz4) %>% 
-  layer_points( ~x, ~fuzz4,fill="fuzzy linear - I") %>% 
-  layer_paths( ~x, ~fuzz5) %>% 
-  layer_points( ~x, ~fuzz5,fill="fuzzy exp - I") %>% 
-  layer_paths( ~x, ~fuzz6) %>% 
-  layer_points( ~x, ~fuzz6,fill="fuzzy Gaussian - I") %>% 
+  layer_points(size := 50,fill="....... linear") %>%
+  layer_paths( ~x, ~count_gas,strokeDash:=3) %>% 
+  layer_points( ~x, ~count_gas,fill="....... Gaussian") %>% 
+  layer_paths( ~x, ~fuzz4,strokeDash:=7) %>% 
+  layer_points( ~x, ~fuzz4,fill="- - - - fuzzy linear - I") %>% 
+  layer_paths( ~x, ~fuzz5,strokeDash:=7) %>% 
+  layer_points( ~x, ~fuzz5,fill="- - - - fuzzy exp - I") %>% 
+  layer_paths( ~x, ~fuzz6,strokeDash:=7) %>% 
+  layer_points( ~x, ~fuzz6,fill="- - - - fuzzy Gaussian - I") %>% 
   layer_paths( ~x, ~fuzz7) %>% 
-  layer_points( ~x, ~fuzz7,fill="fuzzy linear - II") %>% 
+  layer_points( ~x, ~fuzz7,fill="____ fuzzy linear - II") %>% 
   layer_paths( ~x, ~fuzz8) %>% 
-  layer_points( ~x, ~fuzz8,fill="fuzzy exp - II") %>% 
+  layer_points( ~x, ~fuzz8,fill="____ fuzzy exp - II") %>% 
   layer_paths( ~x, ~fuzz9) %>% 
-  layer_points( ~x, ~fuzz9,fill="fuzzy Gaussian - II") %>% 
+  layer_points( ~x, ~fuzz9,fill="____ fuzzy Gaussian - II") %>% 
   
   scale_numeric("y", domain = c(0.7,1)) %>%
   
