@@ -5,6 +5,9 @@ Experiments using cross product kernels on fuzzy sets and SVM on PIMA attribute 
 Experiments described in the paper: Fuzzy set similarity using kernels on fuzzy sets.
 Reference:
 
+Guevara, Jorge  and Canu, Stephane and Hirata Jr, Roberto Cross product kernels on fuzzy sets for fuzzy set similarity, 
+2017 IEEE International Conference on Fuzzy Systems - FUZZ-IEEE 2017
+
 ---
 ## Prerequisites
 * SVM-KM from http://asi.insa-rouen.fr/enseignants/~arakoto/toolbox/  (included)
