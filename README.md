@@ -13,7 +13,7 @@ Reference:
 * SVM-KM from http://asi.insa-rouen.fr/enseignants/~arakoto/toolbox/  (included)
 * MATLAB 2013a for the experiments
 * R for the plots
-* All the twelve 5-fvc versions of the PIMA noise attribute data set from the Keel repository http://sci2s.ugr.es/keel/attributeNoise.php (pima-5an-nn, pima-10an-nn, etc). Put the datasets in separate folders  within the datasets folder, i.e., /datasets/pima-5an-cn-5-fold/<nowiki>*</nowiki>.dat
+* All the twelve 5-fold versions of the PIMA and SONAR noise attribute data set from the Keel repository http://sci2s.ugr.es/keel/attributeNoise.php (pima-5an-nn, pima-10an-nn, etc). **Put the datasets in separate folders  within the datasets folder, i.e., /datasets/pima-5an-cn-5-fold/<nowiki>*</nowiki>.dat**
 
 ## Code Example
 
