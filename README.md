@@ -2,7 +2,6 @@
 
 ## Synopsis
 Experiments using cross product kernels on fuzzy sets and SVM on PIMA attribute Noise data.
-Experiments described in the paper: Fuzzy set similarity using kernels on fuzzy sets.
 Reference:
 
 **_Guevara, Jorge  and Canu, Stephane and Hirata Jr, Roberto Cross product kernels on fuzzy sets for fuzzy set similarity, 
