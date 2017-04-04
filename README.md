@@ -4,7 +4,7 @@
 Experiments using cross product kernels on fuzzy sets and SVM on PIMA attribute Noise data.
 Reference:
 
-**_Guevara, Jorge  and Canu, Stephane and Hirata Jr, Roberto Cross product kernels on fuzzy sets for fuzzy set similarity, 
+Guevara, Jorge  and Canu, Stephane and Hirata Jr, Roberto **_Cross product kernels on fuzzy sets for fuzzy set similarity, 
 2017 IEEE International Conference on Fuzzy Systems - FUZZ-IEEE 2017_**
 
 ---
